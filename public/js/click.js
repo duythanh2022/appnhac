@@ -1,4 +1,4 @@
-
+let audio = document.getElementById('app');
 let clickNghe=(key)=> {
     // console.log(`http://m.nhaccuatui.com/ajax/get-media-info?key1=${key}`)
     
@@ -56,7 +56,20 @@ window.onload = () => {
         clicksearch();
     })
 }
+ let myplay=(div1)=>{
+    console.log(div1)
+    if(audio.paused){
+        console.log(audio.paused)
+        audio.play();
+    div1.classList.add("playing");
+// 
+    }else{
+        audio.pause();
+        div1.classList.remove("playing");
 
+
+    }
+}
 //tro ly ao 
 // let SpeechRecognition = SpeechRecognition || webSpeechRecognition;
 // const recognition = new SpeechRecognition();

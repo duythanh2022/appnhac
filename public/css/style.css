@@ -28,11 +28,11 @@ html {
   display: none;
 }
 
-.player.playing .icon-pause {
+.playing .icon-pause {
   display: inline-block;
 }
 
-.player.playing .icon-play {
+.playing .icon-play {
   display: none;
 }
 
